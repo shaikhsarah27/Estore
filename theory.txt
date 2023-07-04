@@ -1,0 +1,174 @@
+What is a bootstrap?
+======================
+Bootstrap is a CSS framework used to develop User
+interface.
+It cintains pre-defined css classes that can be used to apply 
+on the html elements.It provides 12 column grid system,so that html 
+elements are accurately placed on the browser.
+
+Folder Structure for developing any web application
+
+Project
+-assets
+ -css
+  -style.css
+  -bootstrap.min.css
+ -js
+  -main.js
+  -bootstrap.min.js
+  -popper.min.js
+ -images
+-index.html
+-about.html
+-contact.html
+-login.html
+-register.html
+-product.html
+-product_details.html
+-cart.html
+-place_order.html
+
+Two ways to use bootstrap
+===========================
+online using CDN link [Content Dilevery Network]
+css
+=====
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+js
+====
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+offline
+========
+Download
+bootstrap.min.css file and bootstrap.min.js file and
+link them in the html file.
+
+Layout
+=======
+
+1)Breakpoint
+  The screen size in pixel where layout of web page changes.
+
+  Breakpoint	 Class infix   Dimensions   Range
+  ================================================
+  Extra small	 None	        <576px      0px to <576
+  Small	         sm	            ≥576px      576px to <768
+  Medium	     md	            ≥768px      768px to <992
+  Large	         lg	            ≥992px      992px to <1200
+  Extra large	 xl	            ≥1200px     1200 to <1400
+  Extra extra    xxl	        ≥1400px     >=1400
+  large	
+
+
+Container
+=========
+It is a basic layout in bootstrap.
+Web page is entirely designed in Container.
+
+                Web Page = Container
+
+Bootstrap grid system can be applied only within Container
+
+Types of Container classes
+===========================
+1).container
+2).container-Breakpoint
+3).container-fluic
+
+grid
+=====
+Interaction of rows and columns is grid.
+
+container
+ -rows
+
+ row is further divided into columns.
+
+ container
+  -row
+   -columns
+
+<div class="container">
+     <div class="row">
+          <div class="col">
+
+          </div>
+    </div>
+</div>
+
+
+register.html
+==============
+            -------col-md-6-----------
+            ----------- signup----------
+username:_______________
+password:_______________
+confirm 
+password:-_______________
+mobile:________________
+
+register
+
+
+Bootstrap button class
+=======================
+class="btn"
+
+color for bitton:chech website
+
+prodducts page
+===============
+navigation
+===========
+Home About Cart Contact Login Register Logout
+
+<------col-md-4------><--------------------col-md-8--------------------->
+======================|==================================================
+
+side bar               product 1    product 2    product 3    product 4       
+Filters
+Sort by price
+
+main branch
+-sub branch
+-sub branch
+                    |      |
+                    | main |
+                    |branch|
+                  / |      | \
+                 /            \
+                /              \
+            sub branch       sub branch
+             dev1               dev2
+
+Footer
+=======
+<-------------------row-------------------------------------------------------->
+<----------col-md-4------><---------col-md-4--------><---------col-md-4-------->   
+address                    quick links                contact us
+
+
+Product Details Page
+====================
+                           row
+============================================================
+<--------col-md-6----------->|<---------col-md-6----------->
+product image                  product details
+
+
+view cart
+===============
+<----------------------------row------------------------------>
+<-------col-md-9--------------------->|<--------col-md-3------>
+Customer Details                        Total price
+Name:
+Mobile:
+Email:
+
+Product Details
+<------------------------------------->
+<----------->|<----------------------->
+col-md-4       col-md-8
+pimage         product details
